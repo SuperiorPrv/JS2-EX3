@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flexbox">
+        <h1>Users</h1>
+        <button class="addUserButton">+ NEW USER</button>
+        <dialog class="addUserDialog">
+            <form action="" class="addUserForm">
+                <input type="text" placeholder="Name:" name="addName">
+                <input type="text" placeholder="Company:" name="addCompany">
+                <input type="text" placeholder="Role:" name="addRole">
+                <button type="submit">Save</button>
+            </form>
+            <button class="closeAddUserDialog">X</button>
+        </dialog>
+    </div>
+    <input type="search" placeholder="Search user..." class="searchInput">
+    <div class="noneblock">
+        <span class="countOfSelected"></span>
+        <button class="deleteSelectedButton">Delete</button>
+    </div>
+    <table>
+        <thead>
+            <th><input type="checkbox" class="selectAll"></th>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Verified</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </thead>
+        <tbody class="box">
+
+        </tbody>
+        <dialog class="moreActionsDialog">
+            <button class='editUserButton'>Edit</button>
+            <button class="deleteUserButton">Delete</button>
+            <button class="closeMoreActionsDialog">X</button>
+            <dialog class="editUserDialog">
+                <form action="" class="editUserForm">
+                    <input type="text" placeholder="Name:" name="editName">
+                    <input type="text" placeholder="Company:" name="editCompany">
+                    <input type="text" placeholder="Role:" name="editRole">
+                    <button type="submit">Save</button>
+                </form>
+                <button class="closeEditUserDialog">X</button>
+            </dialog>
+        </dialog>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
+</body>
+</html>

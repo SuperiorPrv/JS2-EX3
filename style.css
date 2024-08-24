@@ -1,0 +1,136 @@
+/* Reset some default styles */
+body, h1, button, input, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.closeAddUserDialog,
+button.closeMoreActionsDialog,
+button.closeEditUserDialog {
+    background-color: #dc3545;
+}
+
+button.closeAddUserDialog:hover,
+button.closeMoreActionsDialog:hover,
+button.closeEditUserDialog:hover {
+    background-color: #c82333;
+}
+
+input[type="text"],
+input[type="search"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: calc(100% - 2rem);
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.dialog {
+    padding: 1rem;
+}
+
+.noneblock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 2px solid #ddd;
+}
+
+.countOfSelected {
+    font-size: 1rem;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+td {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+th input[type="checkbox"] {
+    margin: 0;
+}
+
+.dialog {
+    padding: 1rem;
+    border: none;
+}
+
+.dialog form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog form input {
+    margin-bottom: 0.5rem;
+}
+
+.dialog form button {
+    align-self: flex-end;
+}
+
+
