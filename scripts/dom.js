@@ -25,7 +25,19 @@ const noneblock = document.querySelector('.noneblock');
 const countOfSelected = document.querySelector('.countOfSelected');
 const deleteSelectedButton = document.querySelector('.deleteSelectedButton');
 
+const switchThemeButton = document.querySelector('.switchThemeButton');
+
 let ind = 0;
+
+localStorage.setItem('theme', 'true');
+
+switchThemeButton.onclick=()=>{
+    let x=localStorage.getItem('theme');
+    if(x=='true') x='false';
+    else x='true';
+    localStorage.setItem('theme',x);
+    document.querySelector('body').className = localStorage.getItem('theme');
+}
 
 deleteUserButton.onclick=()=>{
     DeleteData(ind);

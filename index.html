@@ -6,10 +6,13 @@
     <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="">
     <div class="flexbox">
         <h1>Users</h1>
-        <button class="addUserButton">+ NEW USER</button>
+        <div class="">
+            <button class="switchThemeButton">Switch Theme</button>
+            <button class="addUserButton">+ NEW USER</button>
+        </div>
         <dialog class="addUserDialog">
             <form action="" class="addUserForm">
                 <input type="text" placeholder="Name:" name="addName">
@@ -25,7 +28,7 @@
         <span class="countOfSelected"></span>
         <button class="deleteSelectedButton">Delete</button>
     </div>
-    <table>
+    <table class="">
         <thead>
             <th><input type="checkbox" class="selectAll"></th>
             <th>Name</th>

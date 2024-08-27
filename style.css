@@ -132,5 +132,11 @@ th input[type="checkbox"] {
 .dialog form button {
     align-self: flex-end;
 }
-
-
+.true{
+    background-color: white;
+    color: black;
+}
+.false{
+    background-color: black;
+    color: white;
+}
